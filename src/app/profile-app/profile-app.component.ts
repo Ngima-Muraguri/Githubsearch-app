@@ -17,14 +17,8 @@ export class ProfileAppComponent implements OnInit {
     // public searchUser()
   }
 
-  ngOnInit(): void {
+  ngOnInit(): {
   }
 
 }
-  ngOnInit(): void {
-    throw new Error('Method not implemented.');
-  }
-  function findProfile() {
-    throw new Error('Function not implemented.');
-  }
-
+ 
