@@ -25,7 +25,7 @@ export class UserService {
   getProfileRepos(){
     var profile =this.httpClient.get("https://api.github.com/users/" + this.gitHubUser +"/repos")
     .pipe(map((response:any)=>response));
-    return repos;
+    // return repos;
   }
   updateProfile(gitHubUser:string){
     this.gitHubUser=gitHubUser

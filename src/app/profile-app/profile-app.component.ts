@@ -12,7 +12,7 @@ export class ProfileAppComponent implements OnInit {
   gitHubUser:string | undefined
 
   constructor(private userService: UserService) { 
-    findProfile(){
+    findProfile() {
         this.userService.updateProfile(gitHubUser)
     // public searchUser()
   }
@@ -24,3 +24,7 @@ export class ProfileAppComponent implements OnInit {
   ngOnInit(): void {
     throw new Error('Method not implemented.');
   }
+  function findProfile() {
+    throw new Error('Function not implemented.');
+  }
+
