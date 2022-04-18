@@ -2,7 +2,11 @@
     text-align: center;
     padding: 10px;
     margin-top: 5%;
+    
 }
 .welcome{
     text-align: center;
+}
+.btn{
+    margin: 30px;
 }
