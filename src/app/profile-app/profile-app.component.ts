@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+
 
 @Component({
   selector: 'app-profile-app',
@@ -6,7 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./profile-app.component.css']
 })
 export class ProfileAppComponent implements OnInit {
-  public gitHubUser:string | undefined
+  // public gitHubUser:string | undefined
+  gitHubUser:string | undefined
 
   constructor() { 
     // public searchUser()
