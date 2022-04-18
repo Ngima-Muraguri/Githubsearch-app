@@ -7,16 +7,16 @@ import { UserService } from '../user.service';
   styleUrls: ['./profile-data.component.css']
 })
 export class ProfileDataComponent implements OnInit {
-  repos:any[];
+  repos:any[] | undefined;
   repository:{
-    name:string,
-    full_name:string,
-    description:string,
-    github:string,
-    link:string
+    name: string;
+    full_name: string;
+    description: string;
+    github: string;
+    link: string;
 
 
-  }
+  } | undefined
 
   constructor(private userService:UserService) { 
     this.userService.getProfileRepos().subscribe((repos)=>{
