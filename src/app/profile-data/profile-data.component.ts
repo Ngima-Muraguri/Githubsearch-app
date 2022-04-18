@@ -12,8 +12,8 @@ export class ProfileDataComponent implements OnInit {
     name: string;
     full_name: string;
     description: string;
-    github: string;
-    link: string;
+    html_url: string;
+    homepage: string;
 
 
   } | undefined
