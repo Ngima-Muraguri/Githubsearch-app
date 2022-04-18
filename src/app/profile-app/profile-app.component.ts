@@ -1,4 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { UserService } from '../user.service';
 
 
 @Component({
@@ -18,3 +19,7 @@ export class ProfileAppComponent implements OnInit {
   }
 
 }
+// constructor(private userService: UserService){}
+// findProfile(){
+//   this.userService.updateProfile(gitHubUser)
+// }
