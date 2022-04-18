@@ -9,16 +9,20 @@ import { UserService } from '../user.service';
 })
 export class ProfileAppComponent implements OnInit {
   // public gitHubUser:string | undefined
-  gitHubUser:string | undefined
+  gitHubUser!:any
 
   constructor(private userService: UserService) { 
-    findProfile() {
-        this.userService.updateProfile(gitHubUser)
+    
     // public searchUser()
   }
-
-  ngOnInit(): {
+  ngOnInit(): void{
   }
 
+
+  findProfile() {
+    this.userService.updateProfile(this.gitHubUser)
+  }
+
+  
 }
  
