@@ -1,3 +1,12 @@
 .repo{
     text-align: center;
 }
+.cards{
+    
+    border: 8px solid gray;
+    margin: 10px;
+    text-align: center;
+    width: 30%;
+    display: flex;
+  flex-direction: flex;
+}
