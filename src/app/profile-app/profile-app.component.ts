@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./profile-app.component.css']
 })
 export class ProfileAppComponent implements OnInit {
+  public gitHubUser:string | undefined
 
   constructor() { }
 
