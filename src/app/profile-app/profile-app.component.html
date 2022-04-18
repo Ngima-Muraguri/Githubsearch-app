@@ -12,13 +12,17 @@
       <!-- <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
     </li>
   </ul>
+  <div class="welcome">
+    <h1>GITHUB SEARCH</h1>
+    <p> Welcome </p>
+  </div>
   <div class="git">
    <form >
 <div class="put">
     <input [(ngModel)]="gitHubUser" name="user" type="text" class="search" placeholder="enter user">
-
+    <!-- (submit)="searchUser" -->
 </div>
-<div class="mit">
+<div class="mit" >
     <input type="submit" value="search" class="btn btn-primary btn-sm">
 
 </div>

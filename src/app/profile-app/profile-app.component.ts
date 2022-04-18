@@ -8,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class ProfileAppComponent implements OnInit {
   public gitHubUser:string | undefined
 
-  constructor() { }
+  constructor() { 
+    // public searchUser()
+  }
 
   ngOnInit(): void {
   }
