@@ -23,7 +23,7 @@ export class ProfileInfoComponent implements OnInit {
     updated at:string
   }
 
-  constructor() { 
+  constructor(private UserService:UserService) { 
 
   }
   findProfile(){
