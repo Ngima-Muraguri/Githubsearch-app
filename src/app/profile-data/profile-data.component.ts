@@ -7,7 +7,7 @@ import { UserService } from '../user.service';
   styleUrls: ['./profile-data.component.css']
 })
 export class ProfileDataComponent implements OnInit {
-  repos:any[] | undefined;
+  public repos:any=[] ;
   repository:{
     name: string;
     full_name: string;
@@ -19,9 +19,9 @@ export class ProfileDataComponent implements OnInit {
   } | undefined
 
   constructor(private userService:UserService) { 
-    this.userService.getProfileRepos().subscribe((repos)=>{
+    this.userService.getProfileRepos().subscribe((repos:any)=>{
       this.repos=repos;
-    })
+    });
   }
 
   ngOnInit(): void {

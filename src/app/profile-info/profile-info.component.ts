@@ -7,26 +7,23 @@ import { UserService } from '../user.service';
   styleUrls: ['./profile-info.component.css']
 })
 export class ProfileInfoComponent implements OnInit {
- user:any=[]
- repo:any=[]
- gitHubUser!:string
+ public user:any=[]
+ public repo:any=[]
+ public username:string ='Ngima-Muraguri';
 
   constructor(private UserService:UserService) { 
-    this.UserService.getProfileInfo().subscribe(user=>{
-      this.user=user
-    })
-    this.UserService.getProfileRepos().subscribe(repo=>{
-      this.repo=repo
-
-    })
+    
+    
+    
 
   }
   findProfile(){
-    this.UserService.updateProfile(this.gitHubUser)
-    this.UserService.getProfileInfo().subscribe((user=>{
-      console.log(user)
-      this.user=user
-    }))
+    this.UserService.updateProfile(this.username);
+    console.log(this.username)
+    this.UserService.getUser().subscribe((users:any)=>{
+      console.log(users)
+      this.user=users
+    })
     // this.UserService.getProfileRepos().subscribe(repo=>{
     //   this.repo=repo
   }

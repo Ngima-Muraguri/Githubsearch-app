@@ -1,6 +1,7 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { UserService } from '../user.service';
-
+import { NgForm } from '@angular/forms';
+import { ProfileInfo } from '../profile-info';
 
 @Component({
   selector: 'app-profile-app',
@@ -15,20 +16,12 @@ export class ProfileAppComponent implements OnInit {
   
 
   constructor(private userService: UserService) { 
-    this.userService.getProfileInfo().subscribe(user=>{
-      this.user=user
-    })
+   
     this.userService.getProfileRepos().subscribe(repo=>{
       this.repo=repo
     })
   }
-  findProfile(){
-    this.userService.updateProfile(this.gitHubUser)
-    this.userService.getProfileInfo().subscribe((user=>{
-      console.log(user)
-      this.user=user
-    }))
-  }
+  
 
   ngOnInit(): void{
   }
