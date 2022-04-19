@@ -19,16 +19,16 @@ export class UserService {
     this.gitHubUser='Ngima-Muraguri';
   }
   getProfileInfo(){
-    var profile=this.httpClient.get("https://api.github.com/users/"+this.gitHubUser)
+    return this.httpClient.get("https://api.github.com/users/"+this.gitHubUser)
     .pipe(map((response:any)=>response));
-    console.log(profile)
-    return profile
+    // console.log(profile)
+    // return profile
   }
 
   getProfileRepos():Observable<any>{
-    var profile =this.httpClient.get("https://api.github.com/users/" + this.gitHubUser +"/repos")
+    return this.httpClient.get("https://api.github.com/users/" + this.gitHubUser +"/repos")
     .pipe(map((response:any)=>response));
-    return profile;
+    // return profile;
   }
   updateProfile(gitHubUser:string){
     this.gitHubUser=gitHubUser

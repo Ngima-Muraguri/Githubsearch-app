@@ -9,7 +9,7 @@ import { UserService } from '../user.service';
 export class ProfileInfoComponent implements OnInit {
  user:any=[]
  repo:any=[]
- username!:string
+ gitHubUser!:string
 
   constructor(private UserService:UserService) { 
     this.UserService.getProfileInfo().subscribe(user=>{
@@ -22,7 +22,7 @@ export class ProfileInfoComponent implements OnInit {
 
   }
   findProfile(){
-    this.UserService.updateProfile(this.username)
+    this.UserService.updateProfile(this.gitHubUser)
     this.UserService.getProfileInfo().subscribe((user=>{
       console.log(user)
       this.user=user
