@@ -18,18 +18,18 @@
       <img class="card-img-top" src="" alt="">
     </div>
     <div class="col">
-      <h4 class="card-title" >Account name:</h4>
-      <p class="card-text">username</p>
-      <p class="card-text">userbio:</p>
-      <p class="card-text">Created at:</p>
-      <p class="card-text">Updated at:</p>
+      <h4 class="card-title" >Account name: {{user.name}} </h4>
+      <p class="card-text">username: {{user.username}} </p>
+      <p class="card-text">userbio: {{user.bio}} </p>
+      <p class="card-text">Created at: {{user.created_at|date}} </p>
+      <p class="card-text">Updated at: {{user.updated_at|date}} </p>
     </div>
     <div class="col">
       <p class="following">
-        <span class="label label-primary">Public repos:</span>
-        <span class="label label-primary">Public gists:</span>
-        <span class="label label-primary">Followers:</span>
-        <span class="label label-primary">Following:</span>
+        <span class="label label-primary">Public repos: {{user.public_repos}} </span>
+        <span class="label label-primary">Public gists: {{user.public_gists}} </span>
+        <span class="label label-primary">Followers: {{user.followers}} </span>
+        <span class="label label-primary">Following: {{user.following}} </span>
       </p>
 
     </div>
