@@ -1,5 +1,14 @@
-.pic{
-    /* height: 180px; */
+.put{
+text-align: center;
+
+}
+.studio{
+    width: 20%;
+    margin-left: 40%;
+    
+}
+.code{
+    margin: 10px;
 }
 .info{
     text-align: center;

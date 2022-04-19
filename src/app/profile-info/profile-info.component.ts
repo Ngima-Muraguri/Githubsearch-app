@@ -27,6 +27,8 @@ export class ProfileInfoComponent implements OnInit {
     // this.UserService.getProfileRepos().subscribe(repo=>{
     //   this.repo=repo
   }
+  
+
 
   ngOnInit(): void {
     

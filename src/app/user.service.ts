@@ -13,7 +13,7 @@ export class UserService {
    private repo:any
   //  private user!:ProfileInfo
 
-  // private clientSecret:'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' ;
+  private clientSecret:'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' | undefined ;
 
   constructor(private httpClient:HttpClient) { 
     this.username='Ngima-Muraguri';
