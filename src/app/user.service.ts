@@ -2,13 +2,17 @@ import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http'
 import { map } from 'rxjs/operators';
 import { Observable } from 'rxjs';
+import { ProfileInfo } from './profile-info'; 
 
 
 @Injectable({
   providedIn: 'root'
 })
 export class UserService {
-  private gitHubUser:string;
+   gitHubUser!:string;
+   repo:any
+   user!:ProfileInfo
+
   private clientSecret:'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' | undefined;
 
   constructor(private httpClient:HttpClient) { 
