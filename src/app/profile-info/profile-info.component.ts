@@ -7,7 +7,21 @@ import { UserService } from '../user.service';
   styleUrls: ['./profile-info.component.css']
 })
 export class ProfileInfoComponent implements OnInit {
-
+  username:string;
+  profile:{
+    name:string,
+    Followers:number,
+    login:string,
+    company:string,
+    avatar_url:string,
+    bio:string,
+    Public repos:number,
+    html_url:string,
+    public_gists:number,
+    folowing:number,
+    created at:string,
+    updated at:string
+  }
 
   constructor() { 
 
